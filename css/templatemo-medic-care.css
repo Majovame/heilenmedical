@@ -392,7 +392,7 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon {
   background: var(--dark-color);
-  transition: background 10ms 300ms ease;
+  transition:  10ms 300ms ease;
   display: block;
   width: 30px;
   height: 2px;
@@ -437,6 +437,8 @@ strong {
 -----------------------------------------*/
 
 .simple-gallery {
+  display: flex;
+  align-items: flex-start;
   width: 100%;
   box-sizing: border-box;
 }
@@ -449,54 +451,117 @@ strong {
   padding: 0;
 }
 .simple-gallery .simple-gallery--preview {
-  width: 70%;
-  height: 50%;
-  float: left;
-  margin-right: 2%;
+  flex: 1; /* El contenedor de vista previa ocupará el espacio restante */
+  text-align: center; /* Centrar el contenido horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .simple-gallery .simple-gallery--thumbs {
-  width: 22%;
-  float: left;
-  
+  width: 22.2%;
+  float: left; 
 }
-.simple-gallery .simple-gallery--thumbs ul li {
-  margin-bottom: 12%;
+
+.simple-gallery .simple-gallery--thumbs li {
+  margin-bottom: 10%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
+
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
 }
+.simple-gallery--thumbs  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs  li img {
+  width: 75%;
+  height: auto;
+}
+
+
+/*imagen producto 1*/
 .simple-gallery .simple-gallery--thumbs1 {
   width: 25%;
   float: left;
 }
-.simple-gallery .simple-gallery--thumbs1 ul li {
-  margin-bottom: 22%;
-}
-.simple-gallery .simple-gallery--thumbs2 {
-  width: 20%;
-  float: left;
-}
-.simple-gallery .simple-gallery--thumbs2 ul li {
-  margin-bottom: 6%;
-}
+.simple-gallery .simple-gallery--thumbs1 li {
+  margin-bottom: 12%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
 
-.simple-gallery .simple-gallery--thumbs3 {
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
+}
+.simple-gallery--thumbs1  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs1  li img {
+  width: 75%;
+  height: auto;
+}
+/*imagen producto2*/
+.simple-gallery .simple-gallery--thumbs2 {
   width: 20.5%;
   float: left;
 }
-.simple-gallery .simple-gallery--thumbs3 ul li {
-  margin-bottom: 14%;
-}
+.simple-gallery .simple-gallery--thumbs2  li {
+  margin-bottom: 10%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
 
-.simple-gallery .simple-gallery--thumbs4 {
-  width: 25.5%;
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
+}
+.simple-gallery--thumbs2  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs2  li img {
+  width: 75%;
+  height: auto;
+}
+/*imagen producto3*/
+
+.simple-gallery .simple-gallery--thumbs3 {
+  width: 21%;
   float: left;
 }
-.simple-gallery .simple-gallery--thumbs4 ul li {
-  margin-bottom: 18%;
+.simple-gallery .simple-gallery--thumbs3  li {
+  margin-bottom: 14%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
+
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
 }
+.simple-gallery--thumbs3  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs3  li img {
+  width: 75%;
+  height: auto;
+}
+/*imagen producto 4*/
+
+.simple-gallery .simple-gallery--thumbs4 {
+  width: 25.2%;
+  float: left;
+}
+.simple-gallery .simple-gallery--thumbs4  li {
+  margin-bottom: 10%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
+
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
+}
+.simple-gallery--thumbs4  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs4  li img {
+  width: 75%;
+  height: auto;
+}
+/*inicio de texto 4*/
 
 
 .product-info {
-  margin-top: 20px; /* Espacio superior */
+  margin-top: 250px; /* Espacio superior */
   text-align: center; /* Centrar el contenido horizontalmente */
 }
 .product-info h2 {
@@ -524,18 +589,31 @@ strong {
 }
 
 
+
 /*---------------------------------------
   producto Hombres            
 -----------------------------------------*/
 
 .simple-gallery .simple-gallery--thumbs5 {
-  width: 21.5%;
+  width: 22%;
   float: left;
 }
 
 .simple-gallery .simple-gallery--thumbs5 ul li {
   margin-bottom: 15%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
+
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
 }
+.simple-gallery--thumbs5  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs5  li img {
+  width: 75%;
+  height: auto;
+}
+/*imagen producto 6*/
 
 .simple-gallery .simple-gallery--thumbs6 {
   width: 22%;
@@ -543,7 +621,19 @@ strong {
 }
 .simple-gallery .simple-gallery--thumbs6 ul li {
   margin-bottom: 12%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
+
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
 }
+.simple-gallery--thumbs6  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs6  li img {
+  width: 75%;
+  height: auto;
+}
+/*imagen producto 7*/
 
 .simple-gallery .simple-gallery--thumbs7 {
   width: 22%;
@@ -551,7 +641,20 @@ strong {
 }
 .simple-gallery .simple-gallery--thumbs7 ul li {
   margin-bottom: 12%;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las miniaturas */
+
+  /* Agrega un efecto de zoom cuando se pasa el mouse sobre la miniatura */
+  transition: transform 0.3s;
 }
+.simple-gallery--thumbs7  li:hover {
+  transform: scale(1.2); /* Ajusta el nivel de zoom según tus preferencias */
+}
+.simple-gallery--thumbs7  li img {
+  width: 75%;
+  height: auto;
+}
+
+  /* fin productos hombres */
 
 
 
